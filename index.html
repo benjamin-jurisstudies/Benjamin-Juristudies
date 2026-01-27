@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Make whole page fill the screen */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    background: #ffe6f0; /* soft pink */
+  }
+
+  /* Main content (left side) */
+  .main {
+    flex: 1; /* takes up most of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main h1 {
+    font-size: 3em;
+    color: #ff69b4;
+  }
+
+  /* Side menu (right) */
+  .side-menu {
+    width: 200px; /* fixed width for menu */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  .side-menu a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+
+  .side-menu a:hover {
+    color: #ff1493;
+  }
+
+  @media (max-width: 600px) {
+    /* On small screens, side menu moves to top */
+    body {
+      flex-direction: column;
+    }
+    .side-menu {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .side-menu a {
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="main">
+    <h1>Welcome!</h1>
+    <p>This is your full-screen page.</p>
+  </div>
+
+  <div class="side-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cases.html">Cases</a>
+  </div>
+
+</body>
+</html>
