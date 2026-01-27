@@ -23,6 +23,6 @@ DOCTYPE html>
 </head>
 
 <body>
-  <iframe src="BenjaminJuristudies.pdf"></iframe>
+  <iframe src="BenjaminJuristudies.pdf.pdf"></iframe>
 </body>
 </html>
