@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Juristudies</title>
 
   <style>
+    /* COLORS */
     :root {
       --dusty-pink: #2596be;
       --soft-pink: #2596be;
@@ -13,6 +14,7 @@
       --text-dark: #4a4a4a;
     }
 
+    /* RESET */
     * {
       margin: 0;
       padding: 0;
@@ -26,14 +28,19 @@
       line-height: 1.6;
     }
 
-    /* NAV */
+    /* NAVIGATION */
     nav {
-      background-color: var(--white);
-      padding: 1.2rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem 2rem;
       border-bottom: 1px solid #eee;
+      background-color: var(--white);
+    }
+
+    nav h1 {
+      color: var(--dusty-pink);
+      font-size: 1.5rem;
     }
 
     nav a {
@@ -43,12 +50,12 @@
       font-weight: 500;
     }
 
-    /* HERO */
+    /* HERO SECTION */
     .hero {
       background-color: var(--dusty-pink);
       color: var(--white);
-      padding: 5rem 2rem;
       text-align: center;
+      padding: 5rem 2rem;
     }
 
     .hero h1 {
@@ -57,11 +64,48 @@
     }
 
     .hero p {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
+    /* MAIN SECTION */
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      color: var(--dusty-pink);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .section p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--soft-pink);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--dusty-pink);
+    }
 
     /* FOOTER */
     footer {
@@ -76,40 +120,59 @@
 
 <body>
 
+  <!-- NAVIGATION -->
+  <nav>
+    <h1>Benjamin Juristudies</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Cases</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 
-  <!-- HERO / WELCOME -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <h1>Benjmain Juristudies</h1>
-    <p>The goal of Benjamin-Juristudies is to explore law by engaging in the process of analyzing, critically thinking, and discussing popular cases worldwide known for their complexity. This website aims to understand how laws function, the different areas in law, how laws are formulated, and how the process of logical thinking is implemented to solve real-life scenarios.
-  </p>
+    <h1>Welcome to Benjamin Juristudies</h1>
+    <p>
+      The goal of Benjamin-Juristudies is to explore law by engaging in the process of analyzing, critically thinking, and discussing popular cases worldwide known for their complexity. This website aims to understand how laws function, the different areas in law, how laws are formulated, and how the process of logical thinking is implemented to solve real-life scenarios.
+    </p>
   </section>
 
-  <!-- MAIN SECTION -->
+  <!-- MAIN CONTENT -->
   <section class="section">
-    <h2><!-- SECTION TITLE --></h2>
-    <p><!-- SECTION DESCRIPTION --></p>
+    <h2>Case Analysis</h2>
+    <p>
+      Benjamin-Juristudies will especially engage in the analysis of cases, which are an integral part of the field of law. We will together analyze cases to understand the underlying laws, the decisions, and the logical thinking involved in the process. Such an approach should help readers understand the laws clearly, not just on a theoretical level but on a practical level. Cmon we gotta be able to engage in some basic critical thinking and if you can’t we’ll help you. That’s what this website is about after all.
+
+    </p>
 
     <div class="cards">
       <div class="card">
-        <h3><!-- CARD TITLE --></h3>
-        <p><!-- CARD TEXT --></p>
+        <h3>Types of Law </h3>
+        <p>In addition to case laws, the website will deep dive into different aspects of laws, including constitutional laws, criminal laws, aspects of civil laws, and family law. This website will cover a range of aspects, including individual rights, the roles of courts, the roles of the state, and how laws affect the lives of people.
+</p>
       </div>
 
       <div class="card">
-        <h3><!-- CARD TITLE --></h3>
-        <p><!-- CARD TEXT --></p>
+        <h3>Legal Principles</h3>
+        <p>Explore core legal concepts and principles, and develop clear reasoning and strong analytical skills for academic and practical use.</p>
       </div>
 
       <div class="card">
-        <h3><!-- CARD TITLE --></h3>
-        <p><!-- CARD TEXT --></p>
+        <h3>Critical Thinking</h3>
+        <p>Of course, Benjamin-Juristudies will also engage in the analysis of laws, their definitions, and other aspects that are the foundation of the field of law, help individuals develop logical thinking skills, clarity of expression, and critical thinking to understand the aspects involved.
+</p>
       </div>
-    </div>
+  <div class="card">
+        <h3>Have fun ! </h3>  </div>
+      <p> Though the website will engage in the analysis of laws, the website will, at the same time, reflect the approach that confidence and individuality go hand-in-hand with serious thinking, especially when one enters the field of law, which demands preparation, discipline, and confidence.
+</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p><!-- FOOTER TEXT --></p>
+    <p>&copy; 2026 Benjamin Juristudies. All rights reserved.</p>
   </footer>
 
 </body>
