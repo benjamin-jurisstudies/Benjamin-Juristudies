@@ -7,54 +7,44 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #ffffff;
+      height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      background: #fafafa; /* soft white */
     }
 
-    /* Outer frame */
     .frame {
+      width: 85vw;
+      height: 85vh;
       padding: 24px;
-      border: 1px solid #d9a5b3; /* muted rose */
-      max-width: 900px;
-      width: 90%;
-      box-sizing: border-box;
-    }
-
-    /* Inner mat */
-    .mat {
-      padding: 40px;
-      background: #ffffff;
-      border: 1px solid #e8c9d1; /* lighter rose */
+      border: 1px solid rgba(0,0,0,0.15);
+      box-shadow: 
+        0 10px 30px rgba(0,0,0,0.08),
+        inset 0 0 0 1px rgba(0,0,0,0.05);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      background: white;
+      transition: transform 0.4s ease;
     }
 
-    .mat img {
+    .frame:hover {
+      transform: scale(1.01);
+    }
+
+    .frame img {
       max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    @media (max-width: 768px) {
-      .mat {
-        padding: 24px;
-      }
+      max-height: 100%;
+      object-fit: contain;
+      filter: contrast(1.05);
     }
   </style>
 </head>
 
 <body>
-
   <div class="frame">
-    <div class="mat">
-      <img src="IMG_7857.jpeg" alt="About visual">
-    </div>
+    <img src="IMG_7857.jpeg" alt="About academic case analysis visual">
   </div>
-
 </body>
 </html>
