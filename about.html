@@ -9,31 +9,51 @@
       margin: 0;
       padding: 0;
       background: #ffffff;
-      font-family: Georgia, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 80px auto;
+    /* Outer frame */
+    .frame {
+      padding: 24px;
+      border: 1px solid #d9a5b3; /* muted rose */
+      max-width: 900px;
+      width: 90%;
+      box-sizing: border-box;
+    }
+
+    /* Inner mat */
+    .mat {
       padding: 40px;
-      border: 1px solid #e4cccc; /* muted rose */
+      background: #ffffff;
+      border: 1px solid #e8c9d1; /* lighter rose */
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .container img {
+    .mat img {
       max-width: 100%;
       height: auto;
       display: block;
+    }
+
+    @media (max-width: 768px) {
+      .mat {
+        padding: 24px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-   <img src="IMG_7857.jpeg" style="max-width:95%; height:auto;">
+  <div class="frame">
+    <div class="mat">
+      <img src="IMG_7857.jpeg" alt="About visual">
+    </div>
   </div>
 
 </body>
